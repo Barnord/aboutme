@@ -39,32 +39,32 @@ alert('Hello, ' + userName + '. Welcome to my about me site, lets play a game!')
 // console.log('I\'m going to ask you five questions, please answer them with a simple yes or no')
 alert('I\'m going to ask you seven questions, please answer them with a simple yes or no')
 
-// askYes(myName);
-// askNo(myLocation);
-// askNo(age);
-// askYes(school);
-// askNo(potato);
+askYes(myName);
+askNo(myLocation);
+askNo(age);
+askYes(school);
+askNo(potato);
 
-// guess my number
-// let numberGameValue = Math.floor(Math.random() * 50);
-// let guesses = 0;
-// let userNumber;
-// while ((guesses < 4) && (userNumber != numberGameValue)) {
-//   userNumber = prompt('Guess a number between 1 and 50');
-//   console.log(guesses)
-//   guesses++;
-//   if (userNumber == numberGameValue) {
-//     alert('THAT IS CORRECT!!');
-//     score++;
-//   } else if (userNumber > numberGameValue) {
-//     alert('Too high!');
-//   } else if (userNumber < numberGameValue) {
-//     alert('Too low!');
-//   }
-//   if ((guesses == 4) && (userNumber != numberGameValue)) {
-//     alert('The number was ' + numberGameValue + ', better luck next time!')
-//   }
-// }
+//guess my number
+let numberGameValue = Math.floor(Math.random() * 50);
+let guesses = 0;
+let userNumber;
+while ((guesses < 4) && (userNumber != numberGameValue)) {
+  userNumber = prompt('Guess a number between 1 and 50');
+  console.log(guesses)
+  guesses++;
+  if (userNumber == numberGameValue) {
+    alert('THAT IS CORRECT!!');
+    score++;
+  } else if (userNumber > numberGameValue) {
+    alert('Too high!');
+  } else if (userNumber < numberGameValue) {
+    alert('Too low!');
+  }
+  if ((guesses == 4) && (userNumber != numberGameValue)) {
+    alert('The number was ' + numberGameValue + ', better luck next time!')
+  }
+}
 
 // pick which fits
 let guesses = 0
