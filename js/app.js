@@ -37,25 +37,54 @@ let userName = prompt('What is your name?')
 alert('Hello, ' + userName + '. Welcome to my about me site, lets play a game!')
 
 // console.log('I\'m going to ask you five questions, please answer them with a simple yes or no')
-alert('I\'m going to ask you five questions, please answer them with a simple yes or no')
+alert('I\'m going to ask you seven questions, please answer them with a simple yes or no')
 
-askYes(myName);
-askNo(myLocation);
-askNo(age);
-askYes(school);
-askNo(potato);
+// askYes(myName);
+// askNo(myLocation);
+// askNo(age);
+// askYes(school);
+// askNo(potato);
 
-if (score === 5) {
-  alert('Congratulations ' + userName + '!! you\'ve answered all five of my questions correctly!');
+// guess my number
+// let numberGameValue = Math.floor(Math.random() * 50);
+// let guesses = 0;
+// let userNumber;
+// while ((guesses < 4) && (userNumber != numberGameValue)) {
+//   userNumber = prompt('Guess a number between 1 and 50');
+//   console.log(guesses)
+//   guesses++;
+//   if (userNumber == numberGameValue) {
+//     alert('THAT IS CORRECT!!');
+//     score++;
+//   } else if (userNumber > numberGameValue) {
+//     alert('Too high!');
+//   } else if (userNumber < numberGameValue) {
+//     alert('Too low!');
+//   }
+//   if ((guesses == 4) && (userNumber != numberGameValue)) {
+//     alert('The number was ' + numberGameValue + ', better luck next time!')
+//   }
+// }
+
+// pick which fits
+let guesses = 0
+let rivers = ['john day', 'grand ronde', 'stillaguamish', 'stilly', 'snoqualmie', 'owyhee', 'skykomish', 'john day River', 'grand ronde river', 'stillaguamish river', 'stilly river', 'snoqualmie river', 'owyhee river', 'skykomish river']
+let river = '';
+while (!rivers.includes(river.toLowerCase()) && guesses < 6) {
+  river = prompt('Can you name one river I\'ve kayaked? (hint! They\'re all in Washington and Oregon!)');
+  guesses++;
+  if (rivers.includes(river.toLowerCase())) {
+    alert('That is correct!');
+    score++;
+}   else if (!rivers.includes(river.toLowerCase()) && guesses === 6) {
+    alert('Nope, sorry! You\'re out of guesses.')
+}   else {
+    alert('Incorrect!');
+}}
+alert('The rivers I have kayaked are: The John Day, Grand Ronde, Stillaguamish, Snoqualmie, Owyhee, and the Skykomish.')
+
+if (score === 7) {
+  alert('Congratulations ' + userName + '!! you\'ve answered all seven of my questions correctly!');
 } else {
-    alert('Thanks for playing ' + userName + ', you answered ' + score + ' out of 5 questions correctly.');
+    alert('Thanks for playing ' + userName + ', you answered ' + score + ' out of 7 questions correctly.');
 }
-
-
-// FIVE YES OR NO QUESTIONS
-
-// Is my Name Ben? Y
-// Do I live in Everett? N
-// Am I 32 years old? N
-// Did I go to Bothell High School? Y
-// Have I spent three years in Nicaragua farming potatoes? Y
