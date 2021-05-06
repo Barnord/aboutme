@@ -67,7 +67,7 @@ while ((guesses < 4) && (userNumber != numberGameValue)) {
 }
 
 // pick which fits
-let guesses = 0
+guesses = 0
 let rivers = ['john day', 'grand ronde', 'stillaguamish', 'stilly', 'snoqualmie', 'owyhee', 'skykomish', 'john day River', 'grand ronde river', 'stillaguamish river', 'stilly river', 'snoqualmie river', 'owyhee river', 'skykomish river']
 let river = '';
 while (!rivers.includes(river.toLowerCase()) && guesses < 6) {
