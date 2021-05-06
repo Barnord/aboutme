@@ -1,36 +1,6 @@
 'use strict'
 
-let correct = 0;
-let myName = 'Is my name Ben?';
-let myLocation = 'Do I live in Everett?';
-let age = 'Am I 32 years old?';
-let school = 'Did I go to Bothell High School?';
-let potato = 'Have I spent three years in Nicaragua farming potatoes?';
 let score = 0;
-
-function askYes(question) {
-  let answer=prompt(question);
-  if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
-    score++
-    // console.log('That is correct!');
-    alert('That is correct!');
-  } else if (answer.toLowerCase() === 'no' || answer.toLowerCase() === 'n') {
-    // console.log('Incorrect!');
-    alert('Incorrect!');
-  }
-}
-
-function askNo(question) {
-  let answer=prompt(question);
-  if (answer.toLowerCase() === 'no' || answer.toLowerCase() === 'n') {
-    score++
-    // console.log('That is correct!');
-    alert('That is correct!');
-  } else if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
-    // console.log('Incorrect!');
-    alert('Incorrect!');
-  }
-}
 
 let userName = prompt('What is your name?')
 // console.log('Hello, ' + userName + '. Welcome to my about me site, lets play a game!')
@@ -39,11 +9,55 @@ alert('Hello, ' + userName + '. Welcome to my about me site, lets play a game!')
 // console.log('I\'m going to ask you five questions, please answer them with a simple yes or no')
 alert('I\'m going to ask you seven questions, please answer them with a simple yes or no')
 
-askYes(myName);
-askNo(myLocation);
-askNo(age);
-askYes(school);
-askNo(potato);
+let myName=prompt('Is my name Ben?');
+if (myName.toLowerCase() === 'yes' || myName.toLowerCase() === 'y') {
+  score++
+  // console.log('That is correct!');
+  alert('That is correct!');
+} else if (myName.toLowerCase() === 'no' || myName.toLowerCase() === 'n') {
+  // console.log('Incorrect!');
+  alert('Incorrect!');
+}
+
+let myLocation=prompt('Do I live in Everett?');
+if (myLocation.toLowerCase() === 'no' || myLocation.toLowerCase() === 'n') {
+  score++
+  // console.log('That is correct!');
+  alert('That is correct!');
+} else if (myLocation.toLowerCase() === 'yes' || myLocation.toLowerCase() === 'y') {
+  // console.log('Incorrect!');
+  alert('Incorrect!');
+}
+
+let age=prompt('Am I 32 years old?');
+if (age.toLowerCase() === 'no' || age.toLowerCase() === 'n') {
+  score++
+  // console.log('That is correct!');
+  alert('That is correct!');
+} else if (age.toLowerCase() === 'yes' || age.toLowerCase() === 'y') {
+  // console.log('Incorrect!');
+  alert('Incorrect!');
+}
+
+let school=prompt('Did I go to Bothell High School?');
+if (school.toLowerCase() === 'yes' || school.toLowerCase() === 'y') {
+  score++
+  // console.log('That is correct!');
+  alert('That is correct!');
+} else if (school.toLowerCase() === 'no' || school.toLowerCase() === 'n') {
+  // console.log('Incorrect!');
+  alert('Incorrect!');
+}
+
+let potato=prompt('Have I spent three years in Nicaragua farming potatoes?');
+if (potato.toLowerCase() === 'no' || potato.toLowerCase() === 'n') {
+  score++
+  // console.log('That is correct!');
+  alert('That is correct!');
+} else if (potato.toLowerCase() === 'yes' || potato.toLowerCase() === 'y') {
+  // console.log('Incorrect!');
+  alert('Incorrect!');
+}
 
 //guess my number
 let numberGameValue = Math.floor(Math.random() * 50);
